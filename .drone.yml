@@ -11,9 +11,8 @@ steps:
         from_secret: username
       password:
         from_secret: password
-      when:
-        branch: [master]
-        event: [push]
 
 trigger:
   cron: [ nightly ]
+  branch: [master]
+  event: [push]
