@@ -7,6 +7,8 @@ steps:
     image: plugins/docker
     settings:
       repo: ktruckenmiller/aws-cdk
+      build_args:
+        - CDK_VERSION=2.3.0
       username:
         from_secret: username
       password:
