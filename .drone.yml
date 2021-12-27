@@ -14,8 +14,10 @@ steps:
       password:
         from_secret: password
 
-# trigger:
-#   event:
-#     - push
-#     - cron
-#   cron: [ nightly ]
+trigger:
+  event:
+    - push
+    - cron
+  branch:
+    - master
+  cron: [ nightly ]
