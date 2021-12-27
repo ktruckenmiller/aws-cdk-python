@@ -17,7 +17,7 @@ steps:
 trigger:
   event:
     - push
-    - cron
-  branch:
-    - master
-  cron: [ nightly ]
+  #   - cron
+  # branch:
+  #   - master
+  # cron: [ nightly ]
